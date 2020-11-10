@@ -1,0 +1,476 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Mapa UMNG</title>
+	<link rel="icon" type="image/png" href="https://i.imgur.com/jtanDeM.png"> 
+	<div id="container"></div> 
+    <script src = "http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js" ></script>
+	<link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"> </script>
+	<script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"> </script>
+	
+	<style>
+	
+	body{
+	background-image: url(https://i.imgur.com/tLgi06M.png); 
+	background-repeat: no-repeat;
+	background-size: 1085px 1375px;
+	background-position: 0px 150px;
+	}
+
+
+
+html.pushbar_locked {
+    overflow: hidden;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.pushbar_locked .pushbar_main_content.pushbar_blur {
+    filter: blur(15px);
+}
+
+.pushbar_overlay {
+    z-index: -999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    will-change: opacity;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    background: #3c3442;
+}
+
+html.pushbar_locked .pushbar_overlay {
+    opacity: 0.8;
+    z-index: 999;
+}
+
+[data-pushbar-id] {
+    z-index: 1000;
+    position: fixed;
+    overflow-y: auto;
+    will-change: transform;
+    transition: transform 0.5s ease;
+    background: #FFF6C8;
+}
+
+[data-pushbar-direction="left"][data-pushbar-id], [data-pushbar-direction="right"][data-pushbar-id] {
+    top: 0;
+    min-width: 800px;
+    height: 100%;
+}
+
+[data-pushbar-direction="top"][data-pushbar-id], [data-pushbar-direction="bottom"][data-pushbar-id] {
+    left: 0;
+    width: 100%;
+    min-height: 150px;
+}
+
+[data-pushbar-direction="right"][data-pushbar-id] {
+    right: 0;
+    transform: translateZ(0) translateX(100%);
+}
+
+[data-pushbar-direction="top"][data-pushbar-id] {
+    top: 0;
+    transform: translateZ(0) translateY(-100%);
+}
+
+[data-pushbar-id].opened {
+    display: block;
+    transform: translateX(0px) translateY(0px);
+}
+
+	
+	
+	.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.bottom-left {
+  position: absolute;
+  top: 1300px;
+  left: 0px;
+}
+	
+	.button {
+	
+	background-color: #595DF3; 
+	border: none;
+	color: white;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	position: absolute;
+	left: 770px;
+	top: 8px;
+	}
+	
+	.button2{
+	background-color: #595DF3; 
+	border: none;
+	color: white;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 2px 2px;
+	cursor: pointer;
+	}
+	</style>
+
+ </head>
+
+<a href="https://www.umng.edu.co/inicio"> <img src="https://i.imgur.com/dQRu3au.png" alt="Logo"> </a>
+
+<body style="background-color:#EADDCC;">
+
+<div class="container">
+
+  <div class="bottom-left">UMNG 2020</div>
+</div>
+
+
+<div data-pushbar-id="PushbarC" data-pushbar-direction="right" class="pushy">
+		<font color="595DF3" face="verdana">
+		<button class="button" data-pushbar-close>x</button><br>
+			<b>Concha Acustica</b><br><br>
+		<font color="Black" face="verdana">	
+		
+			<img src="https://i.imgur.com/qvulAMx.png"><br>
+		<br>
+			
+			Agenda Casio <br>
+		<img src="https://i.imgur.com/ORBgo6C.png"><br>	
+		<br>
+			Calculografo<br>
+		<img src="https://i.imgur.com/2efEHHf.png"><br>	
+		<br>
+			Condensador Telegrafico  <br>
+		<img src="https://i.imgur.com/buif41v.png"><br>	
+		<br>
+			Dictafono <br>	
+		<img src="https://i.imgur.com/QsbgyZN.png"><br>	
+		<br>
+			Grabador Cintas  <br>
+		<img src="https://i.imgur.com/lA075OI.png"><br>	
+		<br>
+			Impresora Telex <br>				
+		<img src="https://i.imgur.com/FlaDu9U.png"><br>	
+		<br>
+			Proyector de Diapositivas <br>
+		<img src="https://i.imgur.com/n089kMz.png"><br>
+		<br>
+			Psofometro   <br>
+		<img src="https://i.imgur.com/U1t73Z1.png"><br>	
+		<br>
+			Telefono de Magneto  <br>				
+		<img src="https://i.imgur.com/mzmlwcY.png"><br>	
+		<br>
+			Telefono Electromagnetico <br>				
+		<img src="https://i.imgur.com/bmfYXJg.png.png"><br>	
+		<br>
+
+<a href="https://www.umng.edu.co/proyecto-campus"> INFO </a>
+		
+	</div>
+		
+<div data-pushbar-id="Pushbar1" data-pushbar-direction="right" class="pushy">
+		<font color="595DF3" face="verdana">
+		<button class="button" data-pushbar-close>x</button><br>
+			<b>Labaratorios Fase 1</b><br><br>
+		<font color="Black" face="verdana">	
+
+			<img src="https://i.imgur.com/uAuz3jE.jpg"><br>
+		<br>
+
+			Ohminimetro <br>
+		<img src="https://i.imgur.com/Kchy5Nf.png"><br>	
+		<br>
+			Probador de Tubos <br>
+		<img src="https://i.imgur.com/57LQ6pf.png"><br>	
+		<br>
+			Proyector de Sonido <br>
+		<img src="https://i.imgur.com/yHTyaGz.png"><br>	
+		<br>
+			Telefono Pubilico Didactico <br>
+		<img src="https://i.imgur.com/h6IjMNC.png"><br>	
+		<br>
+			Voltimetro<br>
+		<img src="https://i.imgur.com/oGMqnhF.png"><br>	
+		<br>
+		<a href="https://www.umng.edu.co/edificio-laboratorios-fase-1"> INFO </a>
+	</div>	
+	
+<div data-pushbar-id="PushbarL" data-pushbar-direction="right" class="pushy">
+		<font color="595DF3" face="verdana">
+		<button class="button" data-pushbar-close>x</button><br>
+			<b>Edificio José Maria Cabal</b><br><br>
+		<font color="Black" face="verdana">	
+		<img src="https://i.imgur.com/X7LBacM.jpg"><br>
+		<br>
+			Casetera Technics <br>
+		<img src="https://i.imgur.com/Nprh7BO.png"><br>	
+		<br>
+			Grabador Cintas <br>
+		<img src="https://i.imgur.com/bF1AFKW.png"><br>	
+		<br>
+			Multimetro Simpson 260  <br>
+		<img src="https://i.imgur.com/XtkX7uU.png"><br>	
+		<br>
+			Parlante Technics <br>
+		<img src="https://i.imgur.com/BTunaCC.png"><br>	
+		<br>
+			Probador de Tubos <br>
+		<img src="https://i.imgur.com/MZScpc0.png"><br>	
+		<br>
+			Sintonizador Emisora Technics  <br>
+		<img src="https://i.imgur.com/pYZRqgF.png"><br>	
+		<br>
+			Teleimpresor <br>
+		<img src="https://i.imgur.com/MeyTzXb.png"><br>	
+		<br>
+		<a href="https://www.umng.edu.co/edificio-josé-maria-cabal"> INFO </a>
+	</div>
+
+<div data-pushbar-id="PushbarA" data-pushbar-direction="right" class="pushy">
+		<font color="595DF3" face="verdana">
+		<button class="button" data-pushbar-close>x</button><br>
+			<b>Edificio Jose Celestino Mutis</b><br><br>
+		<font color="Black" face="verdana">	
+			<img src="https://i.imgur.com/yBN3d90.jpg"><br>
+		<br>
+			Camara Fuelle  <br>
+		<img src="https://i.imgur.com/D82kvRt.png"><br>	
+		<br>
+		<a href="https://www.umng.edu.co/proyecto-campus"> INFO </a>
+	</div>	
+	
+<div data-pushbar-id="PushbarP" data-pushbar-direction="right" class="pushy">
+		<font color="595DF3" face="verdana">
+		<button class="button" data-pushbar-close>x</button><br>
+			<b>Edificio Sepulveda "Pi"</b><br><br>
+		<font color="Black" face="verdana">	
+			<img src="https://i.imgur.com/wQVlCIG.jpg"><br>
+		<br>
+			Osciloscopio  <br>
+		<img src="https://i.imgur.com/DbTaRel.png"><br>	
+		<br>
+		<a href="https://www.umng.edu.co/edificio-sepulveda"> INFO </a>
+	</div>		
+	
+<div data-pushbar-id="pushinfo" data-pushbar-direction="top" class="pushy">
+		<font face="verdana">
+		<button  class="button2" data-pushbar-close>x</button><br>
+		<b>¿Como usar el programa?</b><br><br>
+		<div align="center"> <img src="https://i.imgur.com/3n3Fznb.png" alt="Logo"><br> </div><br>
+		<div align="center"> <img src="https://i.imgur.com/J8MsgSm.png" alt="Logo"><br> </div>
+		<b>Contactos: </b>
+		<a href="https://www.umng.edu.co/museo-campus"> Pagina Oficial</font></a>
+		<a href="https://twitter.com/museosumng?lang=es"> Twitter</font></a>
+		<a href="https://www.facebook.com/MuseosUNMG/"> Facebook </font></a>
+</div>
+	
+ <script>
+ 
+ 
+ var Unselect = {
+ 
+ fill: "#FFF", 
+ stroke: "#FFC559", 
+ "stroke-width": 1 
+ }
+ 
+ var UnselectInfo = {
+ 
+ fill: "#FFF", 
+ stroke: "#FFC559", 
+ "stroke-width": 1 
+ } 
+
+  var Inter = {
+ 
+ fill: "#EB5151", 
+  "stroke-width": 0 
+ }
+ 
+ var paper = Raphael( 0, 150, 1000, 1300);  
+ 
+ var dot = paper.path('m 480 320,0 50, 50 0, 0 -50, -50 0'); 
+dot.attr(Unselect);
+ dot.hover(function() {
+ this.g = this.glow({color: "#FFFF00", width: 30, opacity:0.5});
+        this.animate({
+      fill: '#00bbff'
+    }, 100);
+dot[0].style.cursor = 'crosshair';
+      
+	  },
+      function() {
+	  this.g.remove();
+
+        this.animate({
+      fill: Unselect.fill,
+	 stroke: Unselect.stroke, 
+    }, 100);
+ }).click(function() {
+  this.g.remove();
+pushbar.open('PushbarC');
+ }
+ );
+ 
+ 
+ var dot2 = paper.path('m 600 1050,0 50, 50 0, 0 -50, -50 0'); 
+dot2.attr(Unselect);
+ dot2.hover(function() {
+ this.g = this.glow({color: "#FFFF00", width: 30, opacity:0.5});
+        this.animate({
+      fill: '#00bbff'
+    }, 100);
+dot[0].style.cursor = 'crosshair';
+      
+	  },
+      function() {
+	  this.g.remove();
+
+        this.animate({
+      fill: Unselect.fill,
+	 stroke: Unselect.stroke, 
+    }, 100);
+ }).click(function() {
+  this.g.remove();
+pushbar.open('Pushbar1');
+ }
+ );
+ 
+ 
+ var dot3 = paper.path('m 740 475,0 50, 50 0, 0 -50, -50 0'); 
+dot3.attr(Unselect);
+ dot3.hover(function() {
+ this.g = this.glow({color: "#FFFF00", width: 30, opacity:0.5});
+        this.animate({
+      fill: '#00bbff'
+    }, 100);
+dot[0].style.cursor = 'crosshair';
+      
+	  },
+      function() {
+	  this.g.remove();
+
+        this.animate({
+      fill: Unselect.fill,
+	 stroke: Unselect.stroke, 
+    }, 100);
+ }).click(function() {
+  this.g.remove();
+pushbar.open('PushbarL');
+ }
+ ); 
+ 
+ var dot4 = paper.path('m 760 670,0 50, 50 0, 0 -50, -50 0');
+dot4.attr(Unselect);
+ dot4.hover(function() {
+ this.g = this.glow({color: "#FFFF00", width: 30, opacity:0.5});
+        this.animate({
+      fill: '#00bbff'
+    }, 100);
+dot[0].style.cursor = 'crosshair';
+      
+	  },
+      function() {
+	  this.g.remove();
+
+        this.animate({
+      fill: Unselect.fill,
+	 stroke: Unselect.stroke, 
+    }, 100);
+ }).click(function() {
+  this.g.remove();
+pushbar.open('PushbarA');
+ }
+ ); 
+ 
+ var dot5 = paper.path('m 890 720,0 50, 50 0, 0 -50, -50 0');
+dot5.attr(Unselect);
+ dot5.hover(function() {
+ this.g = this.glow({color: "#FFFF00", width: 30, opacity:0.5});
+        this.animate({
+      fill: '#00bbff'
+    }, 100);
+dot[0].style.cursor = 'crosshair';
+      
+	  },
+      function() {
+	  this.g.remove();
+
+        this.animate({
+      fill: Unselect.fill,
+	 stroke: Unselect.stroke, 
+    }, 100);
+ }).click(function() {
+  this.g.remove();
+pushbar.open('PushbarP');
+ }
+ ); 
+ 
+var info = paper.circle(31, 30, 20); 
+ info.attr(UnselectInfo);
+ info.hover(function() {
+ this.g = this.glow({color: "#FF0000", width: 20, opacity:0.2});
+        this.animate({
+      fill: '#FFED59'
+    }, 100);
+info[0].style.cursor = 'crosshair';
+      
+	  },
+      function() {
+	  this.g.remove();
+
+        this.animate({
+      fill: UnselectInfo.fill,
+	 stroke: UnselectInfo.stroke, 
+    }, 100);
+ }).click(function() {
+  this.g.remove();
+pushbar.open('pushinfo');
+ }
+ );
+ 
+  var fig = paper.path('m 26 16,10 0, -3 18, -5 0, -3 -18, 1 0');
+  fig.attr(Inter);
+  
+ fig.click(function() {
+pushbar.open('pushinfo');
+ }
+ );
+  
+  var info = paper.circle(30.7, 40, 3.5); 
+ info.attr(Inter);
+ 
+  info.click(function() {
+pushbar.open('pushinfo');
+ }
+ );
+    </script>
+
+</body>	
+
+<script>
+
+var pushbar = new Pushbar({
+	blur:true,
+	overlay:true
+});
+</script>
+
+</html>
